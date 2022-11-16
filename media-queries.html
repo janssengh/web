@@ -1,0 +1,97 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+
+    <style>
+        body {
+            background: pink;
+            margin: 0;
+        }
+
+        .container {
+            overflow: auto;
+        }
+
+        #painel {
+            
+            width: auto;
+            float: left;/* flutua à esquerda */
+        }
+
+        #principal {
+            margin-left: 10px;
+       
+        }
+
+        .menu-lista {
+           
+            margin: 0;
+            padding: 0;
+        }
+
+        .menu-item {
+            background: #c5e9c5;
+            border: 1px solid #bbb7eb;
+            border-radius: 4px;
+            list-style-type: none;
+            margin: 4px;
+            padding: 10px;
+        }
+
+        .menu-item:hover{
+            cursor: pointer;
+        }
+
+        /* CSS executado somente se a largura minima = 480px
+            logo, acima de 480px será assumida essa configuraçãO CSS
+        */
+        @media screen and (min-width: 480px) {
+            body {
+                background: #cff1ef;
+            }
+
+            #painel{
+                width: 200px;
+                float: right; /* flutua à direita*/
+            }
+           
+        }
+
+
+        
+
+
+
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <ul id="painel">
+            <ul id="menu-lista">
+                <li class="menu-item">menu item 1</li>
+                <li class="menu-item">menu item 2</li>
+                <li class="menu-item">menu item 3</li>
+                <li class="menu-item">menu item 4</li>
+                <li class="menu-item">menu item 5</li>
+            </ul>
+
+            <div id="principal">
+                <h1>Redimensione o navegador para ver o efeito da media queries</h1>
+                <p>Quando a janela do navegador ficar com a largura menor que 480px
+                    o menu flutuará à esquerda da página</p>
+            </div>
+
+        </ul>
+
+
+    </div>
+
+
+
+
+</body>
+</html>
