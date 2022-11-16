@@ -1,0 +1,311 @@
+body {
+    font-family: 'roboto', sans-serif;
+}
+
+
+header {
+    background-color: #e3fbe3;
+    padding: 60px 0;
+}
+
+.painel {
+    /*background-color: pink;*/
+    width: 940px;
+    margin: 0 auto;
+    position: relative;
+}
+
+nav {    
+    position: absolute;
+    top: 80px;
+    right: 0;
+}
+
+nav a {
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+nav a:hover {
+    color: #c78c19;
+    text-decoration: underline;
+}
+
+nav li {
+    /* block - na vertical (padrão)
+    inline - na horizontal
+
+    */
+    display: inline;
+    /* margin-left: 30px */
+    margin: 0 0 0 30px;
+}
+
+.lista-produtos {
+    
+    width: 940px;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+
+.lista-produtos li {
+    
+    width: 30%;
+    display: inline-block;
+    text-align: center;/* centralização horizontal */
+    
+    margin: 0 1.2%;
+    padding: 50px 20px;
+    /* faz com q o padding fique por dentro do 30% width */
+    box-sizing: border-box;
+
+    /*background-color: #c0d88c;*/
+    /*
+    border-color: #428759;
+    border-width: 2px;
+    border-style: dotted; */ /* solid, dashed, dotted */
+    border: 2px solid #428759;
+    border-radius: 10px;
+}
+
+.lista-produtos h2 {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.produto-desc {
+    font-size: 18px;
+}
+.produto-preco {
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* pseudo-classes CSS
+    :hover, :active, :link, :visited, :first-child, :nth-child(), etc
+*/
+/* cursor passando sobre o item */
+.lista-produtos li:hover{
+    border-color: #c78c19;
+}
+
+.lista-produtos li:hover h2{
+    font-size: 32px;
+}
+
+footer {
+    background: url("../images/bg.png");
+    text-align: center;
+    padding: 30px 0;
+}
+
+.copyright {
+    color: #ffffff;
+    font-size: 13px;
+    margin-top: 20px;
+    
+
+}
+
+/* clique pressionado */
+.lista-produtos li:active{
+    border-color: #088c19;
+}
+
+main {
+    width: 940px;
+    margin: 0 auto;
+   
+}
+
+form {
+    margin: 40px 0;
+}
+
+form label, form-legend {
+    display: block; /* quebra linhas */
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+.entrada {
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%; /* metade do main */
+}
+
+.enviar {
+    width: 40%;
+    padding: 15px 0;
+    background: limegreen;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.enviar:hover {
+    background: darkgreen;
+    transform: scale(1.2);   
+}
+
+/* Força dos marcadores: 
+tag: força 1 (Não tem # nem .)
+classe: força 10
+id: força 100
+classe + tag: 10+1: 11
+id + tag: 100+1: 101
+css inline: superior a todos
+
+*/
+
+.banner {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.titulo-principal {
+    text-align: center;
+    /* 2x o tamanho original da fonte */
+    font-size: 2em;
+    margin: 0 0 1em;
+    color: rgba(30,130,30, 0.7);
+}
+
+.titulo-principal:first-letter{
+    font-weight: bold;
+}
+
+/*
+.titulo-principal:before{
+    content: '[';
+}
+
+.titulo-principal:after{
+    content: ']';
+}
+*/
+/*
+p:first-line {
+    font-weight: bold;
+}
+*/
+
+.itens:before {
+    content: '🍃';
+    font-size: 0.9em;
+}
+
+.subtitulo {
+    text-align: center;
+    font-size: 1.5em;
+    margin: 0 0 1em;
+}
+
+.principal {
+    padding: 3em 1em;
+    background: #e4f5e5;
+}
+
+.principal p {
+    margin: 0 0 1em;
+    line-height: 1.3em;    
+}
+
+.principal em {
+    font-style: italic;
+    font-size: 1.2em;
+}
+
+.principal strong {
+    font-weight: bold;
+    color: limegreen;
+}
+
+.produtos {
+    padding: 20px;
+    background: #e4f5e5;
+}
+
+.produtos ul {
+    display: inline-block;
+    vertical-align: top;
+    line-height: 2.5em;
+    width: 20%;
+    margin-left: 30%;
+}
+
+.itens {
+    font-style: italic;
+}
+
+.imagem-produtos {
+    width: 35%;
+    opacity: 1;
+    transition: 0.5s;
+    /* x y espalhamento(blur) intensidade_borda cor */
+    box-shadow: 8px 8px 8px 0 #aaaaaa;
+}
+
+.imagem-produtos:hover {    
+    opacity: 0;
+}
+
+.mapa {
+    padding: 3em 0;
+}
+
+.mapa p {
+    margin: 0 0 2em;
+    text-align: center;
+}
+
+/* 
+    first-child
+    last-child
+    nth-child(2)
+    nth-child(2n) = pares
+    nth-child(2n+1) = impares (pula 1)
+    nth-child(even) = par
+    nth-child(old) = impar
+*/
+
+.itens:nth-child(2n+1) {
+    font-weight: bold;
+}
+
+/* seletores avançados */
+/* filhos imediatos */
+main > p {
+    background: green;
+}
+
+/* irmão mais próximo */
+/* seleciona apenas o p que vem depois do h2 */
+
+/* h2 + p {
+    background: yellow;
+}
+*/
+
+/* todos que vem depois (~) de h2 */
+/*
+h2 ~ p {
+    background: blue;
+}
+*/
+
+/* todos os p de .principal que não são da classe .abc */
+/* .principal p:not(.abc){
+    background: red;
+}
+*/

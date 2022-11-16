@@ -1,0 +1,96 @@
+<!--
+    tags semanticas: header, main, footer, section, aside
+    O HTML semantico é um forma deixar o site com suas informações bem explicadas
+    e compreensíveis para o computador, ajudando em sua busca no google e facilitando
+    o entendimento de leitores de acessibilidade.
+-->
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mundo Verde</title>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <div class="painel">
+            <h1><img src="assets/images/logo-header.png" alt="Logo Mundo Verde"></h1>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+
+    <img class="banner" src="assets/images/banner.png" alt="Banner Mundo Verde">
+
+    <main>
+        <section class="principal">
+            <h2 class="titulo-principal">Sobre o Mundo Verde</h2>
+
+            <p>Localizado no coração da cidade o <strong>Mundo Verde</strong> traz para o mercado o que há de melhor em
+                produtos naturais. Fundada em 2020, a loja Mundo Verde já é destaque na cidade e conquists novod
+                clientes a cada dia.</p>
+
+            <p>
+                Somos movidos pela vontade de um mundo mais saudável. Trabalhamos somente com produtos de excelência,
+                garantindo qualidade e satisfação aos nossos clientes.
+            </p>
+
+            <p id="missao">
+                <em>Nossa missão: <strong>"Proporcionar qualidade de vida aos clientes."</strong> </em>
+            </p>
+
+        </section>
+        <section class="produtos">
+            <h3 class="subtitulo">Produtos</h2>
+
+                <ul>
+                    <li class="itens">Castanhas</li>
+                    <li class="itens">Granolas</li>
+                    <li class="itens">Farinhas</li>
+                    <li class="itens">Frutas secas</li>
+                    <li class="itens">Suplementos</li>
+                </ul>
+
+                <img src="assets/images/produtos.png" class="imagem-produtos" alt="Produtos">
+        </section>
+
+       
+
+    </main>
+    
+    <section class="mapa">
+        <h3 class="subtitulo">Localização</h3>
+        <p>O Mundo Verde encontra-se no centro da cidade</p>
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3617.4693864686883!2d-50.1201505843812!3d-24.950139920222846!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94e822376178aa5b%3A0x4480eb51d3ed50a6!2sR.%20do%20Bronze%2C%20276%2C%20Carambe%C3%AD%20-%20PR%2C%2084145-000!5e0!3m2!1spt-BR!2sbr!4v1668017054442!5m2!1spt-BR!2sbr" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    </section>
+
+    <footer>
+        <img src="assets/images/logo-rodape.png" alt="Logo Mundo Verde Rodapé">
+        <p class="copyright">&copy;Copyright Mundo Verde Ltda</p>
+        <!-- unicode-table.com/pt  pesquisar: copyright -->
+    </footer>
+
+</body>
+
+</html>
