@@ -1,0 +1,89 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <div class="painel">
+        <!--
+            procurar uma imagem no google: loja de ferramentas
+            clicar o botão direito sobre a imagem e copiar o LINK DA IMAGEM -->
+        <img src="https://s2.glbimg.com/9ohGVMWneAF70s0JrMsp65c2LLk=/0x0:5472x3648/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2021/b/7/G91AQMS9aNmL3f2IOUKA/dd-maquinas-sorocaba.jpg">  
+        
+        <h2>CASA DAS FERRAMENTAS</h2>
+
+    </div>
+
+    <div class="container">
+
+        <div class="divtabela">     
+            
+            <h3>Controle de Vendas por data, cliente e produto</h3>
+
+            <table>
+
+                <thead>
+                    
+                    <tr>
+                        <th>Data</th>
+                        <th>Cliente</th>
+                        <th>Produto</th>
+                        <th>Quantidade</th>
+                        <th>Valor</th> 
+                        <th>Total</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>27/10/2022</td>
+                        <td>Pedro Copas</td>
+                        <td>Alicate</td>
+                        <td>2</td>
+                        <td>R$ 35,00</td>
+                        <td>R$ 70,00</td>  
+                    </tr>
+
+                    <tr>
+                        <td>27/10/2022</td>
+                        <td>Pedro Copas</td>
+                        <td>Lixa</td>
+                        <td>3</td>
+                        <td>R$ 45,00</td>
+                        <td>R$ 135,00</td>  
+                    </tr>
+
+                    <tr>
+                        <td>27/10/2022</td>
+                        <td>Pedro Copas</td>
+                        <td>Martelo</td>
+                        <td>10</td>
+                        <td>R$ 7,90</td>
+                        <td>R$ 79,00</td>         
+                    </tr>
+
+                    <tr>
+                        <td>28/10/2022</td>
+                        <td>Alberto de Oliveira</td>
+                        <td>Chave de fenda philips 1x80mm</td>
+                        <td>15</td>
+                        <td>R$ 3,90</td>
+                        <td>R$ 58,50</td>         
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
