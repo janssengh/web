@@ -1,0 +1,47 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muda cor do botão</title>
+</head>
+<body>
+    <h1 id="texto">Hello World</h1>
+    <h1>Outro h1</h1>
+    <button id="red" onclick="muda_vermelho()">Vermelho</button>
+    <button id="blue" onclick="muda_azul()">Azul</button>
+    <button id="green" onclick="muda_verde()">Verde</button>
+    <button>Reset</button>
+
+    <script>
+        function muda_vermelho(){
+            var texto = document.querySelector('#texto');
+            texto.innerHTML = 'Vermelho';
+            texto.style.color = 'red';
+        }
+        function muda_azul(){
+            var texto = document.getElementById('texto');
+            texto.innerHTML = 'Azul';
+            texto.style.color = 'blue';
+        }
+        function muda_verde(){
+            // seleciona h1 pelo nome da tag, retornando um array de 2 elementos.
+            // depois seleciona somente o primeiro elemento = 0
+            var h1 = document.getElementsByTagName('h1')[0];
+            console.log(texto)
+            h1.innerHTML = 'Verde';
+            h1.style.color = 'green';
+        }
+
+       const btnReset = document.getElementsByTagName('button')[3];
+       btnReset.onclick = () => {
+        var h1 = document.getElementsByTagName('h1')[0];
+        h1.innerHTML = 'Hello World';
+        h1.style.color = 'black';    
+       }
+
+
+    </script>
+
+</body>
+</html>

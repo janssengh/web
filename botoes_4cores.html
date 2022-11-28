@@ -1,0 +1,36 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botôes 4 cores</title>   
+
+    <script>
+
+        document.addEventListener('DOMContentLoaded', () => {
+
+            // seleciona todos os botoes que usam a classe .button
+            //                                    0      1     2      3 
+            // retornando um array de botões: [vermelho azul verde laranja]
+            const buttons = document.querySelectorAll('.button');
+            // h1 /= [h1]
+            const h1 = document.getElementsByTagName('h1')[0];         
+            
+            buttons.forEach(button => { 
+                    button.addEventListener('click', () => {
+                    h1.innerHTML = button.innerHTML;
+                    h1.style.color = button.dataset.color;
+                })
+            })
+        })
+
+    </script>
+</head>
+<body>
+    <h1>Hello World</h1>  
+    <button class="button" data-color="red">Vermelho</button>
+    <button class="button" data-color="blue">Azul</button>
+    <button class="button" data-color="green">Verde</button>
+    <button class="button" data-color="#ff9000">Laranja</button>
+</body>
+</html>
