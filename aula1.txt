@@ -1,0 +1,118 @@
+html lang="pt-br">
+<head>
+    <title>Titulo</title>
+
+    <style>
+        body {
+            background-color: aquamarine;
+        }
+
+        h1, h2 {
+            color: blue;
+        }
+
+        h6 {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 22px;
+        }
+
+        .divcanvas {
+            /* background-color: #000000; */
+            z-index: 1;
+            width: 100%;
+            margin-top: 10px;
+        }
+
+        .rodape {
+            width: 100%;
+            height: 50px;
+            background: cornflowerblue;
+            padding-top: 10px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    
+</body>
+    <h1>h1</h1>
+    <h2>h2</h2>
+    <h3>h3</h3>
+    <h4>h4</h4>
+    <h5>h5</h5>
+    <h6>h6</h6>
+
+    <p>este é um parágrafo de texto html</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br/>
+         Nostrum sed delectus voluptatum quibusdam praesentium doloribus tempora ex magnam, ipsa optio incidunt maiores ad voluptas obcaecati libero. Doloremque quaerat tempore fuga.</p>
+    <hr>
+    <label>Seu nome</label>   
+    <input type="number" value="100">
+
+    <br>
+    <label>Progresso</label>
+    <progress value="32" max="100"></progress>
+
+    <ol type="I">
+        <li>Item a</li>
+        <li>item b</li>
+        <li>item c</li>
+    </ol>
+
+    <ul style="list-style-type: circule;"></ul> /*square*/
+        <li>Café</li>
+        <li>Chá</li>
+        <li>leite</li>
+    </ul>
+
+    <div style="text-align: center;">
+        <iframe width="700" height="400" src="https://www.youtube.com/embed/cywFk3P0gfE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    </div>
+    <br>
+
+    <div style="background: #aaaaaa; width: 300px; height: 200px;  margin: 0 auto;">
+        <form action="destino.php">
+            <label>Nome</label>
+            <input type="text" id="nome" name="nome"><br>
+            
+            <label>Sobrenome</label>
+            <input type="text" id="sobrenome" name="sobrenome">
+
+            <input type="submit" value="enviar">
+        </form>
+    </div>
+    
+    <div class="divcanvas">
+        <canvas id="meucanvas"></canvas>
+
+    </div>
+    <!-- este é um comentário em HTML -->
+    <script>
+        var canvas = document.getElementById('meucanvas')
+        // minha tela de desenho canvas
+        var ctx = canvas.getContext('2d')
+        // define a cor do elemento gráfico
+        ctx.fillStyle = 'red';
+        ctx.fillRect(20,20, 75,50);
+        // transparencia
+        ctx.globalAlpha  = 0.2;
+        ctx.fillStyle = 'blue';
+        ctx.fillRect(50, 50, 75, 50);
+        ctx.fillStyle = 'yellow' ;     
+        ctx.fillRect(80,80,75,50);
+    </script>
+
+    <div class="rodape">
+        <p>Autor: Roeland Janssen
+            <a href="http://softgraf.com" target="_blank">SOFTGRAF  Cursos Avançados</a>
+            </p>
+    <div>   
+   
+
+    </form>
+
+
+    </iframe>
+
+   </html>
