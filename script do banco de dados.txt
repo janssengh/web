@@ -1,0 +1,21 @@
+Categoria:
+0 = Cereais
+1 = Suplementos
+2 = Temperos
+
+
+CREATE TABLE Produtos (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    descricao VARCHAR(60) NOT NULL,
+    categoria INT NOT NULL,
+    preco FLOAT NOT NULL,
+    quantidade INT NOT NULL,
+    url VARCHAR(255)
+);
+
+
+INSERT INTO Produtos values (1, 'Granola com castanhas 1Kg', 0,  40.18, 10, 'imagens/cereais.png');
+INSERT INTO Produtos values (2, 'Whey protein 907g',         1, 379.39,  7, 'imagens/suplementos.png');
+INSERT INTO Produtos values (3, 'Alho em pó 59g',            2,  40.18,  5, 'imagens/temperos.png');
+
+

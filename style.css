@@ -1,0 +1,30 @@
+body {
+    background: #f4fcf4;
+}
+
+nav {
+    background: #badbba;
+}
+
+header {
+    background: #e3fbe3;
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+
+.painel {
+    width: 940px;
+    margin: 0px auto;
+}
+
+footer {
+    text-align: center;
+    background: url('imagens/bg.png');
+    padding: 5px 0;
+}
+
+.copyright {
+    color: #ffffff;
+    font-size: 13px;
+    margin-top: 20px;
+}
